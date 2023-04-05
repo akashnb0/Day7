@@ -1,16 +1,12 @@
-import { useState, useEffect } from "react";
+import './App.css';
+import FetchNews from './FetchNews';
 
 function App() {
-  const [message, setMessage] = useState("Hello dear one learning React");
-
-  useEffect(() => {
-   console.log("useEffect hook called");
-    setTimeout(() => {
-      setMessage("Great. This is time to learn about HOOKS");
-    }, 2000);
-  }, []);
-
-  return <div>{message}</div>;
+  return (
+    <div className="App">
+      <FetchNews/>
+    </div>
+  );
 }
 
 export default App;
